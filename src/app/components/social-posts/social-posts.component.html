@@ -1,0 +1,6 @@
+
+<div>
+<h1>My Thoughts</h1>
+<app-post-form (Submitted)="submitPost($event)" ></app-post-form>
+<app-single-post *ngFor="let p of listPosts"[post]="p"></app-single-post>
+</div>
